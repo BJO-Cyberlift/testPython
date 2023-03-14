@@ -21,7 +21,6 @@ def favicon():
 
 @app.route('/hello', methods=['POST'])
 def hello():
-    """helloooooooo"""
     name = request.form.get('name')
 
     if name:
