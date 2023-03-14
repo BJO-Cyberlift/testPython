@@ -15,10 +15,10 @@ jobs:
         uses: lewagon/wait-on-check-action@v1.3.1
         with:
           ref: ${{ github.ref }}
-          check-name: 'build (3.10)'
+          check-name: 'bandit'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           wait-interval: 10
-          allowed-conclusions: failure,completed,cancelled
+          allowed-conclusions: success
 
       - uses: actions/checkout@v2
 
