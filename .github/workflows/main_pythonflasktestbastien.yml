@@ -18,7 +18,7 @@ jobs:
           check-name: 'bandit'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           wait-interval: 10
-          allowed-conclusions: succes
+          allowed-conclusions: success
 
       - uses: actions/checkout@v2
 
