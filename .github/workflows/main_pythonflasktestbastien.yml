@@ -18,6 +18,7 @@ jobs:
           check-name: 'build (3.10)'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           wait-interval: 10
+          allowed-conclusion: cancelled
         
       - uses: actions/checkout@v2
 
