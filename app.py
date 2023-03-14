@@ -4,7 +4,6 @@ from flask import Flask, render_template, request, redirect, url_for, send_from_
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():
     """fonction index"""
@@ -21,6 +20,7 @@ def favicon():
 
 @app.route('/hello', methods=['POST'])
 def hello():
+    """helloooooooo"""
     name = request.form.get('name')
 
     if name:
