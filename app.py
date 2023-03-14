@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 import os
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 
 app = Flask(__name__)
 
@@ -8,6 +8,7 @@ app = Flask(__name__)
 def index():
     print('Request for index page received')
     return render_template('index.html')
+
 
 @app.route('/favicon.ico')
 def favicon():
